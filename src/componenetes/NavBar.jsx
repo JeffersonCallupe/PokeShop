@@ -9,6 +9,9 @@ function NavBar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
+        <figure className='logoContainer' > 
+          <img src="./logoPokebola.png" alt="LogoPOkebola" />
+        </figure>
         <Navbar.Brand href="#home"> PokeShop  </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

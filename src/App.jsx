@@ -1,15 +1,17 @@
 import './App.css'
-import NavBar from './componenetes/Navbar'
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainer from './componenetes/ItemListContainer';
+import  Navbar  from './componenetes/NavBar';
+
 
 function App() {
 
   return (
     <div>
-      <NavBar/>
-      <ItemListContainer greeting={'¡Bienvenidos a la tienda Pokemón!'} />
-
+      <Navbar/>
+      <ItemListContainer greeting={'¡Bienvenidos a la tienda Pokemón!'}   stock={4}  />
+      
     </div>
   )
 }
