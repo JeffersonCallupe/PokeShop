@@ -16,7 +16,6 @@ const ItemCount = ({stock , initial, onAdd} ) => {
         count > 0 ? setCount (count - 1) : alert ( 'Error')
     }
 
-
     const addHandler = () =>{
         onAdd(count)
     }
@@ -25,19 +24,16 @@ const ItemCount = ({stock , initial, onAdd} ) => {
 
     return ( 
 
-        <div>
-            <Button variant="outline-secondary"  onClick={restar} >-</Button>
-             <span>  {count}  </span>
-            <Button variant="outline-primary" onClick={sumar} >+</Button>
+        <div className="d-flex justify-content-center align-items-center flex-column">
+            <div className="mb-2">
+                <Button variant="outline-secondary"  onClick={restar} >-</Button>
+                <span>  {count}  </span>
+                <Button variant="outline-primary" onClick={sumar} >+</Button>
+            </div>
             
-            <br />
-            <br />
             <Button variant="outline-success" onClick={addHandler}  disabled={count === 0} >Agregar al carrito</Button>
-            
-
         </div>
     )
 }
-
 
 export default ItemCount
